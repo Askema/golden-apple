@@ -1,1 +1,28 @@
-//
+.feature__title {
+  display: flex;
+  flex-direction: column;
+  .text(25px; 32px; @black; 400);
+
+  @media (min-width: @tablet-width) {
+    .text(35px; 42px; @black; 400);
+  }
+
+  & small {
+    .text(11px; 14.3px; @black; 400);
+    margin-bottom: 5px;
+    letter-spacing: 1.4px;
+
+    @media (min-width: @tablet-width) {
+      .text(14px; 18.2px; @black; 400);
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.feature__text {
+  .text(16px; 22.4px; @black; 400);
+
+  @media (min-width: @tablet-width) {
+    .text(20px; 28px; @black; 400);
+  }
+}

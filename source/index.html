@@ -10,7 +10,7 @@
   <title>Lancome</title>
 </head>
 
-<body>
+<body class="body">
   <header class="header">
     <div class="header__wrapper container">
       <nav class="nav">
@@ -18,26 +18,28 @@
           <li class="nav__item"><a href="#" class="nav__link">новинки</a></li>
           <li class="nav__item"><a href="#" class="nav__link">азия</a></li>
           <li class="nav__item"><a href="#" class="nav__link">уход</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">макияж</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">парфюм</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">бренды</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">распродажа</a></li>
+          <li class="nav__item nav__item--tablet"><a href="#" class="nav__link">макияж</a></li>
+          <li class="nav__item nav__item--tablet"><a href="#" class="nav__link">парфюм</a></li>
+          <li class=""><a href="#" class="nav__link">бренды</a></li>
+          <li class="nav__item"><a href="#" class="nav__link nav__link--current">распродажа</a></li>
           <li class="nav__item nav__item--logo"><a href="#" class="nav__link nav__link--logo"></a></li>
         </ul>
       </nav>
     </div>
   </header>
   <main class="main">
-    <div class="main__wrapper container">
+    <div class="main__wrapper">
       <section class="product">
-        <div class="product__trademark"></div>
-        <img src="" alt="" class="product__img">
-        <h1 class="product__title">IDÔLE - АРОМАТ БУДУЩЕГО</h1>
-        <p class="product__text">Каждой женщине, которая не боится быть сильной и решительной, которая следует по пути
-          оптимизма и уверенности, Lancôme посвящает Idôle.</p>
-        <a href="" class="product__link btn">КУПИТЬ НОВИНКУ</a>
+        <div class="product__wrapper container">
+          <div class="product__trademark"></div>
+          <img src="" alt="" class="product__img">
+          <h1 class="product__title">IDÔLE - АРОМАТ БУДУЩЕГО</h1>
+          <p class="product__text">Каждой женщине, которая не боится быть сильной и решительной, которая следует по пути
+            оптимизма и уверенности, Lancôme посвящает Idôle.</p>
+          <a href="" class="product__link btn">КУПИТЬ НОВИНКУ</a>
+        </div>
       </section>
-      <section class="feature">
+      <section class="feature container">
         <h2 class="feature__title">
           <small>ТЕХНОЛОГИЧЕСКОЕ ДОСТИЖЕНИЕ</small>
           <span>САМЫЙ ТОНКИЙ ФЛАКОН В МИРЕ</span>
@@ -46,7 +48,7 @@
         <p class="feature__text">Новые грани мира парфюмерии. Чистый и искрящийся аромат, который напомнит Вам
           драгоценный камень.</p>
       </section>
-      <section class="catalog">
+      <section class="catalog container">
         <h2 class="catalog__title">
           <small>АККОРД ЧИСТОТЫ</small>
           <span>НЕОРДИНАРНОСТЬ И СМЕЛОСТЬ</span>
@@ -55,43 +57,55 @@
           где в главной роли выступает роза из Испарты.</p>
         <ul class="catalog__list">
           <li class="catalog__item">
-            <img src="" alt="" class="catalog__img">
-            <h3 class="">
-              <small>парфюмерная вода</small>
-              <span>Lancôme Idôle / 50 мл</span>
-            </h3>
-            <div class="catalog__price">
-              <span>6 390 ₽</span>
-              <span class="catalog__discount">8 520 ₽</span>
-            </div>
-            <div class="catalog__buy">
-              <a href="" class="catalog__link">купить аромат</a>
-            </div>
+            <a href="#" class="catalog__link">
+              <img src="" alt="" class="catalog__img">
+              <h3 class="catalog__item-title">
+                <small>парфюмерная вода</small>
+                <span>LANCÔME Idôle / 50 мл</span>
+              </h3>
+              <div class="catalog__price">
+                <span>6 390 ₽</span>
+                <span class="catalog__discount">8 520 ₽</span>
+              </div>
+              <div class="catalog__buy catalog__buy--tablet">
+                <a href="" class="catalog__buy-link">
+                  <span>купить аромат</span>
+                  <!--Тут будет svg-->
+                </a>
+              </div>
+            </a>
           </li>
           <li class="catalog__item">
-            <img src="" alt="" class="catalog__img">
-            <h3 class="">
-              <small></small>
-              <span></span>
-            </h3>
-            <div class="catalog__price">
-              <span>3 997 ₽</span>
-              <span class="catalog__discount">5 330 ₽</span>
-            </div>
-            <div class="catalog__buy">
-              <a href="" class="catalog__link">купить аромат</a>
-            </div>
+            <a href="" class="catalog__link">
+              <img src="" alt="" class="catalog__img">
+              <h3 class="catalog__item-title">
+                <small>парфюмерная вода</small>
+                <span>LANCÔME Idôle / 25 мл</span>
+              </h3>
+              <div class="catalog__price">
+                <span>3 997 ₽</span>
+                <span class="catalog__discount">5 330 ₽</span>
+              </div>
+              <div class="catalog__buy catalog__buy--tablet">
+                <a href="" class="catalog__buy-link">
+                  <span>купить аромат</span>
+                  <!--Тут будет svg-->
+                </a>
+              </div>
+            </a>
           </li>
         </ul>
       </section>
       <section class="promo">
-        <h2 class="promo__title">
-          <small>промокод</small>
-          <span>SUMMER</span>
-        </h2>
-        <p class="promo__text">дарим 300 ₽ при оформлении заказа от 3000 ₽* без учёта доставки</p>
-        <a href="" class="promo__link btn">применить промо-код</a>
-        <small>* Код действителен после применения скидки</small>
+        <div class="promo__wrapper container">
+          <h2 class="promo__title">
+            <small>промокод</small>
+            <span>SUMMER</span>
+          </h2>
+          <p class="promo__text">дарим 300 ₽ при оформлении заказа от 3000 ₽* без учёта доставки</p>
+          <a href="" class="promo__link btn">применить промо-код</a>
+          <small class="promo__small">* Код действителен после применения скидки</small>
+        </div>
       </section>
     </div>
   </main>
