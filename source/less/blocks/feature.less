@@ -1,7 +1,12 @@
+.feature {
+  margin-bottom: 65px;
+}
+
 .feature__title {
   display: flex;
   flex-direction: column;
   .text(25px; 32px; @black; 400);
+  margin-bottom: 10px;
 
   @media (min-width: @tablet-width) {
     .text(35px; 42px; @black; 400);
@@ -20,6 +25,7 @@
 }
 
 .feature__text {
+  margin-top: 10px;
   .text(16px; 22.4px; @black; 400);
 
   @media (min-width: @tablet-width) {
@@ -29,6 +35,7 @@
 
 .feature__img {
   width: 100%;
+  height: 210px;
   background-color: @bgimage;
 
   @media (min-width: @tablet-width) {

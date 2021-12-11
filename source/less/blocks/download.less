@@ -1,4 +1,9 @@
 .download {
+  padding-bottom: 30px;
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+
   &::after {
     .pseudo();
     position: absolute;
@@ -17,5 +22,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 36px 0 22px 0;
   column-gap: 31px;
 }
