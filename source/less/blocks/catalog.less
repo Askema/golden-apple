@@ -1,0 +1,126 @@
+.catalog__title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding: 0 5px;
+  .text(25px; 32px; @black; 400);
+
+  @media (min-width: @tablet-width) {
+    .text(35px; 42px; @black; 400);
+  }
+
+  & small {
+    .text(11px; 14.3px; @black; 400);
+    margin-bottom: 5px;
+    letter-spacing: 1.4px;
+
+    @media (min-width: @tablet-width) {
+      .text(14px; 18.2px; @black; 400);
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.catalog__text {
+  .text(16px; 22.4px; @black; 400);
+  margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    .text(20px; 28px; @black; 400);
+  }
+}
+
+.catalog__list {
+  .ul();
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.catalog__item {
+  &:not(:nth-child(1)) {
+    margin-top: 29px;
+    @media (min-width: @tablet-width) {
+      margin-top: 0;
+    }
+  }
+  @media (min-width: @tablet-width) {
+    &:nth-child(odd) {
+      text-align: right;
+    }
+
+    &:nth-child(even) {
+      text-align: left;
+    }
+  }
+}
+
+.catalog__link {
+  display: block;
+}
+
+.catalog__item-title {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7px;
+  margin-bottom: 4px;
+  .text(18px; 25.2px; @black; 400);
+
+  @media (min-width: @tablet-width) {
+    .text(20px; 28px; @black; 400);
+  }
+
+  & small {
+    letter-spacing: 1.4px;
+    .text(10px; 15px; @black; 400);
+    @media (min-width: @tablet-width) {
+      .text(11px; 16.5px; @black; 400);
+    }
+  }
+}
+
+.catalog__img {
+  background-color: @bgimage;
+  @media (min-width: @tablet-width) {
+    width: 270px;
+    height: 270px;
+  }
+}
+
+.catalog__price {
+  .text(17px; 23.8px; @black; 700);
+  @media (min-width: @tablet-width) {
+    .text(23px; 32.2px; @black; 700);
+  }
+}
+
+.catalog__discount {
+  position: relative;
+  margin-left: 20px;
+  color: @grey;
+
+  &::after {
+    .pseudo();
+    top: 54%;
+    right: -2px;
+    width: 108%;
+    height: 2px;
+    background-color: @grey;
+  }
+}
+
+.catalog__buy--tablet {
+  display: none;
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.catalog__buy-link {
+  .text(11px; 11px; @black; 400);
+  letter-spacing: 1.4px;
+
+  span {
+    margin-right: 10px;
+  }
+}

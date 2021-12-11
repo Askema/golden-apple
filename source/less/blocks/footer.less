@@ -1,0 +1,16 @@
+.footer {
+  position: relative;
+  padding-bottom: 40px;
+  background-color: black;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
