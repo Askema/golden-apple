@@ -20,3 +20,26 @@
   font-family: "HelveticaNeueCyr", "Helvetica", sans-serif;
   background-color: @black;
 }
+
+.product__trademark {
+  margin-bottom: 20px;
+  @media (min-width: @tablet-width) {
+    width: 224px;
+    height: 55px;
+    margin-bottom: 40px;
+  }
+}
+
+.product__img {
+  width: 100%;
+  height: 347px;
+  overflow: hidden;
+  background: @bgimage url("../../img/product.jpg") center no-repeat;
+  background-size: cover;
+
+  @media (min-width: @tablet-width) {
+    width: 580px;
+    height: 335px;
+    margin: 0 auto;
+  }
+}

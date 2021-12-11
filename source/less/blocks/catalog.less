@@ -64,6 +64,14 @@
   }
 }
 
+.catalog__img {
+  background-color: @bgimage;
+  @media (min-width: @tablet-width) {
+    width: 270px;
+    height: 270px;
+  }
+}
+
 .catalog__price {
   .text(17px; 23.8px; @black; 700);
   @media (min-width: @tablet-width) {
@@ -86,7 +94,18 @@
   }
 }
 
+.catalog__buy--tablet {
+  display: none;
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
 .catalog__buy-link {
   .text(11px; 11px; @black; 400);
   letter-spacing: 1.4px;
+
+  span {
+    margin-right: 10px;
+  }
 }

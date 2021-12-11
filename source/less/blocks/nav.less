@@ -6,7 +6,9 @@
   .ul();
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
+  row-gap: 25px;
 }
 
 .nav__link {
@@ -14,5 +16,23 @@
 
   &--current {
     color: @scarlet;
+  }
+}
+
+.nav__item--tablet {
+  display: none;
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+
+.nav__item--logo {
+  order: -1;
+  width: 100%;
+  margin: 0 auto;
+  @media (min-width: @tablet-width) {
+    order: 1;
+    width: 24px;
+    margin: 0;
   }
 }
